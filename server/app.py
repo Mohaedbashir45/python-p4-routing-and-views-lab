@@ -6,10 +6,10 @@ app = Flask(__name__)
 def index():
     return '<h1>Python Operations with Flask Routing and Views</h1>'
 
-@app.route('/print/<string:string>')
-def print_string(string):
-    print(string)
-    return string
+@app.route('/print/<string:text>')
+def print_string(text):
+    print(text)
+    return text
 
 @app.route('/count/<int:num>')
 def count(num):
